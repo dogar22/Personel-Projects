@@ -3,213 +3,380 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description"
-        content="Personal Profile Web Application of a Data Science Student aspiring to be an ML Engineer">
-    <meta name="keywords" content="Data Science, Machine Learning, AI, Portfolio, Personal Profile, Student">
-    <meta name="author" content="Muhammad Umar">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Umar - Data Science Student</title>
+    <meta name="description"
+        content="Muhammad Umar - Data Science Student and aspiring ML Engineer. Portfolio showcasing AI, ML projects, and technical skills.">
+    <meta name="keywords"
+        content="Data Science, Machine Learning, AI, Python, Portfolio, ML Engineer, Student, Data Analysis">
+    <meta name="author" content="Muhammad Umar">
+    <meta name="theme-color" content="#0b3d91">
+    <meta name="robots" content="index, follow">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #e6f0ff;
-            color: #333;
-            line-height: 1.6;
-        }
+    <!-- Open Graph Tags for Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Muhammad Umar - Data Science & ML Portfolio">
+    <meta property="og:description"
+        content="Explore my portfolio featuring AI, ML projects, and data science expertise.">
+    <meta property="og:url" content="https://muhammmadumar.com">
+    <meta property="og:image" content="profile_pic.jpg">
 
-        /* Nav-Bar */
-        nav {
-            background-color: #003366;
-            padding: 15px 0;
-            text-align: center;
-        }
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Muhammad Umar - Data Science & ML Portfolio">
+    <meta name="twitter:description" content="Data Science student aspiring to become an ML Engineer.">
+    <meta name="twitter:image" content="profile_pic.jpg">
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 20px;
-            font-size: 18px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://muhammmadumar.com">
 
-        nav a:hover {
-            color: #ffd633;
-        }
+    <title>Muhammad Umar - Data Science Student & ML Portfolio</title>
 
-        /* Section Style */
-        section {
-            padding: 40px 60px;
-        }
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-        h1,
-        h2 {
-            color: #003366;
-        }
+    <!-- Google Fonts with Preload -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-        hr {
-            border: 0;
-            border-top: 2px solid #ccc;
-            margin: 30px 0;
-        }
-
-        /* Home Section */
-        #home {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #f9fcff;
-            padding: 60px;
-            flex-wrap: wrap;
-        }
-
-        #home img {
-            border-radius: 50%;
-            width: 220px;
-            height: 220px;
-            object-fit: cover;
-            object-position: top;
-            border: 4px solid #003366;
-        }
-
-
-        #home div {
-            max-width: 60%;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #003366;
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
-
-        footer p {
-            margin: 5px;
-        }
-
-        /* Responsive Design */
-        @media screen and (max-width: 768px) {
-            #home {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            #home div {
-                max-width: 100%;
-            }
-
-            #home img {
-                margin-top: 20px;
-            }
-
-            nav a {
-                display: inline-block;
-                margin: 8px;
-            }
-        }
-    </style>
+    <!-- Project stylesheet -->
+    <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <!--Navigation Bar -->
-    <header>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#career">Career</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
+    <!-- Navigation Bar -->
+    <header role="banner">
+        <nav class="navbar navbar-expand-lg sticky-top" aria-label="Main navigation">
+            <div class="container-lg">
+                <a class="navbar-brand fw-bold" href="#home" aria-label="Muhammad Umar - Home">
+                    Muhammad Umar
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#career">Career</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <!-- Home Section -->
-    <section id="home">
-        <div>
-            <h1>Welcome to My Portfolio</h1>
-            <p><strong>Hi! I’m Muhammad Umar,</strong> a passionate Data Science student aspiring to become a Machine
-                Learning Engineer.</p>
-        </div>
-        <img src="profile_pic.jpg" alt="Profile Picture">
-    </section>
+    <main id="main-content">
+        <!-- Home Section -->
+        <section id="home" class="hero-section py-5 py-lg-6">
+            <div class="container-lg">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-8 col-md-7">
+                        <div class="home-content">
+                            <h1 class="display-5 fw-bold mb-3">Welcome to My Portfolio</h1>
+                            <p class="lead mb-4">
+                                <strong>Hi! I'm Muhammad Umar,</strong> a passionate Data Science student aspiring
+                                to become a Machine Learning Engineer. I turn data into intelligent solutions.
+                            </p>
+                            <a href="#contact" class="btn btn-warning btn-lg">Get in touch</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 text-center">
+                        <div class="profile-image-wrapper">
+                            <img src="profile_pic.jpg" alt="Muhammad Umar - Data Science Student"
+                                class="img-fluid rounded-circle border border-4" loading="lazy" width="220"
+                                height="220">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <hr>
+        <hr class="my-0">
 
-    <!-- About Me -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I’m currently a <b>5th semester Data Science student</b> at
-            Riphah International University, Raiwind Campus, Lahore.
-            My interests include Artificial Intelligence, Data Analytics, and building smart applications.
-        </p>
-        <p>
-            I enjoy exploring data-driven solutions and am always eager to learn emerging technologies in the AI and ML
-            fields.
-        </p>
-    </section>
+        <!-- About Section -->
+        <section id="about" class="py-5 py-lg-6">
+            <div class="container-lg">
+                <article class="section-card">
+                    <h2 class="mb-4">About Me</h2>
+                    <p class="mb-3">
+                        I'm currently a <strong>5th semester Data Science student</strong> at
+                        Riphah International University, Raiwind Campus, Lahore.
+                        My interests include Artificial Intelligence, Data Analytics, and building smart applications
+                        that solve real-world problems.
+                    </p>
+                    <p>
+                        I enjoy exploring data-driven solutions and am always eager to learn emerging technologies in
+                        the AI and ML fields.
+                        My passion lies in transforming raw data into actionable insights and building intelligent
+                        systems.
+                    </p>
+                </article>
+            </div>
+        </section>
 
-    <hr>
+        <hr class="my-0">
 
-    <!-- Education -->
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li><b>Bachelor of Science in Data Science</b> – Riphah International University</li>
-            <li>Intermediate in Pre-Engineering – Punjab College Pakpattan</li>
-            <li>Matriculation in Science – Govt. High School Pakpattan</li>
-        </ul>
-    </section>
+        <!-- Education Section -->
+        <section id="education" class="py-5 py-lg-6">
+            <div class="container-lg">
+                <article class="section-card">
+                    <h2 class="mb-4">Education</h2>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <strong>Bachelor of Science in Data Science</strong><br>
+                            <span class="text-muted">Riphah International University, Lahore</span>
+                        </li>
+                        <li class="mb-3">
+                            <strong>Intermediate in Pre-Engineering</strong><br>
+                            <span class="text-muted">Punjab College Pakpattan</span>
+                        </li>
+                        <li>
+                            <strong>Matriculation in Science</strong><br>
+                            <span class="text-muted">Govt. High School Pakpattan</span>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
 
-    <hr>
+        <hr class="my-0">
 
-    <!-- Career Goals -->
-    <section id="career">
-        <h2>Career & Goals</h2>
-        <p>
-            My goal is to become a <b>Machine Learning Engineer</b> and work on projects that make real-world impact.
-            I aspire to develop intelligent systems capable of automating decisions, analyzing data efficiently,
-            and contributing to AI innovations globally.
-        </p>
-    </section>
+        <!-- Career Goals Section -->
+        <section id="career" class="py-5 py-lg-6">
+            <div class="container-lg">
+                <article class="section-card">
+                    <h2 class="mb-4">Career & Goals</h2>
+                    <p class="mb-3">
+                        My goal is to become a <strong>Machine Learning Engineer</strong> and work on projects that make
+                        real-world impact.
+                        I aspire to develop intelligent systems capable of automating decisions, analyzing data
+                        efficiently,
+                        and contributing to AI innovations globally.
+                    </p>
+                    <p>
+                        I'm committed to continuous learning and staying updated with the latest advancements in AI/ML
+                        technologies,
+                        cloud platforms, and software engineering best practices.
+                    </p>
+                </article>
+            </div>
+        </section>
 
-    <hr>
+        <hr class="my-0">
 
-    <!-- Skills -->
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li>Python Programming</li>
-            <li>Data Analysis & Visualization</li>
-            <li>Machine Learning (Scikit-Learn, Pandas, NumPy)</li>
-            <li>Database Management (MySQL)</li>
-            <li>Power BI Dashboards</li>
-            <li>Web Scraping & Automation</li>
-        </ul>
-    </section>
+        <!-- Skills Section -->
+        <section id="skills" class="py-5 py-lg-6">
+            <div class="container-lg">
+                <article class="section-card">
+                    <h2 class="mb-4">Technical Skills</h2>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled skills-list">
+                                <li class="mb-2">✓ Python Programming</li>
+                                <li class="mb-2">✓ Data Analysis & Visualization</li>
+                                <li class="mb-2">✓ Machine Learning (Scikit-Learn, Pandas, NumPy)</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled skills-list">
+                                <li class="mb-2">✓ Database Management (MySQL)</li>
+                                <li class="mb-2">✓ Power BI Dashboards</li>
+                                <li class="mb-2">✓ Web Scraping & Automation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-    <hr>
+        <hr class="my-0">
 
-    <!-- Contact -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=umerdatascience@gmail.com"
-                target="_blank">umerdatascience@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/dogar22" target="_blank">github.com/dogar22</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/muhammad-umar-26b952301/"
-                target="_blank">linkedin.com/in/muhammad-umar-26b952301/</a></p>
-    </section>
+        <!-- Projects Section -->
+        <section id="projects" class="py-5 py-lg-6">
+            <div class="container-lg">
+                <article>
+                    <h2 class="mb-2">Projects</h2>
+                    <p class="text-muted mb-4">
+                        Selected projects related to AI, ML, and Web development. Links will be added soon.
+                    </p>
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card project-card h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title h5">AI Image Classifier</h3>
+                                    <p class="card-text flex-grow-1">
+                                        A convolutional neural network that classifies images into categories with high
+                                        accuracy.
+                                    </p>
+                                    <a class="btn btn-dark mt-auto" href="#" target="_blank" rel="noopener noreferrer">
+                                        View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card project-card h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title h5">ML Model Deployment</h3>
+                                    <p class="card-text flex-grow-1">
+                                        Deployment pipeline for serving ML models with REST API and comprehensive
+                                        monitoring.
+                                    </p>
+                                    <a class="btn btn-dark mt-auto" href="#" target="_blank" rel="noopener noreferrer">
+                                        View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card project-card h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title h5">Interactive Data Dashboard</h3>
+                                    <p class="card-text flex-grow-1">
+                                        A responsive dashboard for exploring datasets with interactive charts and
+                                        filters.
+                                    </p>
+                                    <a class="btn btn-dark mt-auto" href="#" target="_blank" rel="noopener noreferrer">
+                                        View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <hr class="my-0">
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-5 py-lg-6">
+            <div class="container-lg">
+                <article class="section-card">
+                    <h2 class="mb-3">Contact Me</h2>
+                    <p class="contact-intro mb-4">
+                        I'd love to hear from you! Reach out using any of the options below.
+                    </p>
+
+                    <div class="row g-3">
+                        <!-- Email Contact -->
+                        <div class="col-md-6 col-lg-4">
+                            <a class="btn btn-email btn-lg w-100 d-flex align-items-center justify-content-center gap-2"
+                                href="mailto:umerdatascience@gmail.com" role="button"
+                                aria-label="Send email to umerdatascience@gmail.com">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true" class="icon-sm">
+                                    <path
+                                        d="M3 6.5C3 5.67157 3.67157 5 4.5 5H19.5C20.3284 5 21 5.67157 21 6.5V17.5C21 18.3284 20.3284 19 19.5 19H4.5C3.67157 19 3 18.3284 3 17.5V6.5Z"
+                                        stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M21 6.5L12 12.5L3 6.5" stroke="currentColor" stroke-width="1.2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <span>Email me</span>
+                            </a>
+                        </div>
+
+                        <!-- GitHub Contact -->
+                        <div class="col-md-6 col-lg-4">
+                            <a class="btn btn-github btn-lg w-100 d-flex align-items-center justify-content-center gap-2"
+                                href="https://github.com/dogar22" target="_blank" rel="noopener noreferrer"
+                                aria-label="Visit GitHub profile">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    aria-hidden="true" class="icon-sm">
+                                    <path
+                                        d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.02c-3.2.7-3.87-1.38-3.87-1.38-.53-1.36-1.3-1.72-1.3-1.72-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.78 2.73 1.27 3.4.97.11-.76.41-1.27.75-1.56-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.47.11-3.06 0 0 .97-.31 3.18 1.18.92-.26 1.9-.39 2.88-.39s1.96.13 2.88.39c2.2-1.49 3.17-1.18 3.17-1.18.62 1.59.23 2.77.11 3.06.73.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.4-5.25 5.68.42.36.79 1.07.79 2.16v3.2c0 .31.21.67.8.56C20.71 21.39 24 17.08 24 12 24 5.65 18.35.5 12 .5z" />
+                                </svg>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+
+                        <!-- LinkedIn Contact -->
+                        <div class="col-md-6 col-lg-4">
+                            <a class="btn btn-linkedin btn-lg w-100 d-flex align-items-center justify-content-center gap-2"
+                                href="https://linkedin.com/in/muhammad-umar-26b952301/" target="_blank"
+                                rel="noopener noreferrer" aria-label="Visit LinkedIn profile">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    aria-hidden="true" class="icon-sm">
+                                    <path
+                                        d="M4.98 3.5C4.98 4.6 4.1 5.5 2.98 5.5 1.85 5.5 1 4.6 1 3.5 1 2.4 1.85 1.5 2.98 1.5 4.1 1.5 4.98 2.4 4.98 3.5zM.5 8.5h4.98V23H.5V8.5zM8.5 8.5h4.78v2.03h.07c.67-1.29 2.3-2.64 4.73-2.64C22.36 7.89 24 10.16 24 14.16V23h-4.98v-7.01c0-1.67-.03-3.82-2.33-3.82-2.33 0-2.68 1.82-2.68 3.69V23H8.5V8.5z" />
+                                </svg>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Muhammad Umar | All Rights Reserved</p>
+    <footer role="contentinfo">
+        <div class="container-lg">
+            <p class="mb-0">&copy; 2025 Muhammad Umar | All Rights Reserved</p>
+        </div>
     </footer>
 
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top" title="Scroll to top">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 5v14m0 0l-7-7m7 7l7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+    </button>
+
+    <!-- Noscript Fallback -->
+    <noscript>
+        <p style="text-align: center; padding: 20px; color: #d32f2f;">
+            This portfolio works best with JavaScript enabled. Some features may not work without it.
+        </p>
+    </noscript>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+
+    <!-- Smooth Scrolling and Scroll to Top Script -->
+    <script defer>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll to Top Button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 </body>
 
 </html>
